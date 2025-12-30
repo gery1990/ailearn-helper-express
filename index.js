@@ -17,6 +17,12 @@ app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/api/test", async(req, res) => {
+  res.send({
+    data: "这是新增的方法"
+  })
+});
+
 // 更新计数
 app.post("/api/count", async (req, res) => {
   const { action } = req.body;
