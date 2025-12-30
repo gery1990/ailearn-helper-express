@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
 
 app.get("/api/test", async(req, res) => {
   res.send({
-    data: "这是新增的方法"
+    data: "这是新增的方法1"
   })
 });
 
